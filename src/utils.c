@@ -37,6 +37,8 @@ bool	is_digit_str(char *str)
 {
 	if (*str == '-' || *str == '+')
 		str++;
+	if (!*str)
+		return (false);
 	while (*str)
 	{
 		if (!ft_isdigit(*str))
